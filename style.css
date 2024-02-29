@@ -35,4 +35,14 @@
     margin-top: 10px;
     background-color: white;
     font-size: large;
+    position: relative;
+}
+.newbutton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    width: 5vw;
+    height: 5vh;
 }

@@ -9,8 +9,21 @@ createNote.addEventListener('click', showPara);
 
 function showPara(){
     let newPara = document.createElement('p');
-    // newPara.innerHTML="";
     newPara.setAttribute('contenteditable', true);
+    // newButton.setAttribute('contenteditable', false);
     newPara.classList.add('para');
-    newAddPara.appendChild(newPara);
+    
+    let newButton = document.createElement('img');
+    // newPara.innerHTML="";
+    // newButton.innerText="delete";
+    newButton.src="./pr.png"
+    newButton.classList.add('newbutton')
+    newAddPara.appendChild(newPara).appendChild(newButton);
+    newButton.addEventListener('click', deleteF);
+}
+
+function deleteF(){
+    let para = document.querySelector('p');
+    console.log(para);
+    newAddPara.removeChild(para);
 }
